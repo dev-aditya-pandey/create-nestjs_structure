@@ -64,7 +64,7 @@ if (program.info) {
     .run(
       {
         System: ['OS', 'CPU'],
-        Binaries: ['Node', 'npm', 'Yarn', 'nest'],
+        Binaries: ['Node', 'npm', 'Yarn'],
         Browsers: ['Chrome', 'Edge', 'Internet Explorer', 'Firefox', 'Safari'],
         npmPackages: ['react', 'react-dom', 'react-scripts-mdx'],
         npmGlobalPackages: ['create-react-navi-app'],
@@ -235,7 +235,7 @@ async function run(root, appName, verbose, tarball, useYarn) {
 
     const optionsServer = {
       files: path.join(root, `server.js`),
-      from: [/Nestjs/g],
+      from: [/Nodejs/g],
       to: [`${appName.toUpperCase()}`],
     }
     await fileUpdate(optionsServer)
