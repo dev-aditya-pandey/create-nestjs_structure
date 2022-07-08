@@ -1,4 +1,4 @@
-#!/usr/bin/env nest
+#!/usr/bin/env node
 
 'use strict'
 
