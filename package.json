@@ -1,6 +1,6 @@
 {
   "name": "create-nestjs_structure",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Initialize a nest structure with create-nestjs_structure",
   "main": "index.js",
   "scripts": {
@@ -24,5 +24,11 @@
   "bugs": {
     "url": "https://github.com/dev-aditya-pandey/create-nestjs_structure/issues"
   },
-  "homepage": "https://github.com/dev-aditya-pandey/create-nestjs_structure#readme"
+  "homepage": "https://github.com/dev-aditya-pandey/create-nestjs_structure#readme",
+  "dependencies": {
+    "chalk": "^5.0.1",
+    "cross-spawn": "^7.0.3",
+    "get-npm-tarball-url": "^2.0.3",
+    "validate-npm-package-name": "^4.0.0"
+  }
 }
