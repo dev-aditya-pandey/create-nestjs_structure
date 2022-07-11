@@ -213,18 +213,18 @@ async function run(root, appName, verbose, tarball, useYarn) {
       JSON.stringify(appPackage, null, 2) + os.EOL,
     )
 
-    const appPackageSwagger = JSON.parse(
-      fs.readFileSync(path.join(root, 'public/apiDocsV1/swagger.json')),
-    )
+    // const appPackageSwagger = JSON.parse(
+    //   fs.readFileSync(path.join(root, 'public/apiDocsV1/swagger.json')),
+    // )
 
-    // Set the package name and version
-    appPackageSwagger.info.title = appName
-    appPackageSwagger.info.version = '1.0.0'
+    // // Set the package name and version
+    // appPackageSwagger.info.title = appName
+    // appPackageSwagger.info.version = '1.0.0'
 
-    fs.writeFileSync(
-      path.join(root, 'public/apiDocsV1/swagger.json'),
-      JSON.stringify(appPackageSwagger, null, 2) + os.EOL,
-    )
+    // fs.writeFileSync(
+    //   path.join(root, 'public/apiDocsV1/swagger.json'),
+    //   JSON.stringify(appPackageSwagger, null, 2) + os.EOL,
+    // )
 
     const optionsEnv = {
       files: path.join(root, `.env`),
