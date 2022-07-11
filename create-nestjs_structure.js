@@ -226,12 +226,12 @@ async function run(root, appName, verbose, tarball, useYarn) {
     //   JSON.stringify(appPackageSwagger, null, 2) + os.EOL,
     // )
 
-    const optionsEnv = {
-      files: path.join(root, `.env`),
-      from: [/Demo/g, /demo/g],
-      to: [`${appName}`, `${appName}`],
-    }
-    await fileUpdate(optionsEnv)
+    // const optionsEnv = {
+    //   files: path.join(root, `.env`),
+    //   from: [/Demo/g, /demo/g],
+    //   to: [`${appName}`, `${appName}`],
+    // }
+    // await fileUpdate(optionsEnv)
 
     const optionsServer = {
       files: path.join(root, `server.js`),
